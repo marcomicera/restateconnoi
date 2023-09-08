@@ -3,9 +3,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta charset="utf-8">
-	    <title>Clips</title>
+	    <title>Restate con noi!</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<!-- download button -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
@@ -36,99 +36,221 @@
 			#file-list ul li:first-child {
 				width: 75%;
 			}
+			<!-- in più-->
+			#eheh {
+				display: none;
+			}
 		</style>
+		
+		<script>
+			$("a").click(function(){
+				var img = document.createElement(img);
+				img.setAttribute("class","w3-center");
+				var i = Math.floor(Math.random()*3);
+				switch(i){
+					case 0:
+						img.setAttribute("src", "/images/varie/Mosca");
+						break;
+					case 1:
+						img.setAttribute("src", "/images/varie/Tafano");
+						break;	
+					case 2:
+						img.setAttribute("src", "/images/varie/Zanzara");
+						break;
+				}
+				document.getElementById("eheh").appendChild(img);
+				document.getElementById("eheh").style.display = "block";
+				
+			});
+		</script>
 	</head>
 	<body class="w3-margin">
 		<div id="file-list">
+        	<ul class="w3-ul w3-border w3-display-container">
+				<li class="w3-container w3-padding-16" style="width:100%;">
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">"Allibito"</span><br>
+					<span><i>Enzo</i>, su TripAdvisor</span><br>
+                    
+                    <p style="font-size: 13px;"><i>
+                    	Sono andato a cena in gruppo recentemente in questo ristorante.<br>
+                        Esperienza piena di assurdità. Appena arrivati, con il locale quasi completamente vuoto, quando abbiamo chiesto di poter mangiare fuori ci hanno guardato come se avessimo chiesto a Rocco Siffredi cosa ne pensasse della veginità delle donne.<br>
+                        Una bellissima sorpresa è stato il fatto che credo sia l'<a id="unico" href="##" class="w3-hover-opacity"><u>unico</u></a> ristorante in tutto il Sistema Solare che ha solo bottiglie d'acqua da mezzo litro.<br>
+                        Non solo, alla nostra richiesta di poter avere bottiglie grandi ci è stato detto, con un tono <a id="imbarazzo" href="##" class="w3-hover-opacity"><u>più di imbarazzo che di umorismo</u></a>, che "purtroppo quelle piccole non sono cresciute".<br>
+                        MAH. Per concludere, abbiamo ordinato delle patatine fritte a inizio cena e dopo 40 minuti abbondanti ancora non ci erano state portate.<br>
+                        Quando abbiamo chiesto alla cameriera a che punto fossero ci ha guardato più spaesata dei vendtori ambulanti di birra in <a id="cavalieri" href="##" class="w3-hover-opacity"><u>Piazza dei Cavalieri</u></a> quando gli chiedi lo scontrino.<br>
+                        Inutile dire che ce ne siamo andati senza aspettarle (le patatine, non la crescita delle bottigliette d'acqua).<br><br>
+                        "<b>Allibito</b>" cit.
+                    </i></p>
+				</li>
+			</ul>
+			<ul class="w3-ul w3-border w3-display-container">
+				<li class="w3-container" style="width:100%;">
+					<p>
+                    	Francesca, rimane il fatto che devi continuare a studiare.
+                    </p>
+				</li>
+			</ul>
 			<ul class="w3-ul w3-border w3-display-container">
 				<a id="a0" href="##"><li class="w3-container w3-padding-16 w3-hover-opacity">
-					<img src="images/avatars/Cowboy.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-					<span class="w3-large">Yee haw!</span><br>
-					<span><i>Cowboy</i></span>
-					<audio src="audio/cowboy.mp3"></audio>
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Restate con noi!</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Grazie, restate con noi, grazie.opus"></audio>
 					<script> $("#a0").click(function() { $("audio")[0].play(); }); </script>
 				</li></a>
 				<li class="w3-right">
-					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/cowboy.mp3" download="">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Grazie, restate con noi, grazie.opus" download="">
 						<i class="fa fa-download w3-display-middle download-button-image"></i>
 					</a>
 				</li>
 			</ul>
             <ul class="w3-ul  w3-border w3-display-container">
 				<a id="a3" href="##"><li class="w3-padding-16 w3-hover-opacity">
-					<img src="images/avatars/Musician-Female-Dark.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-					<span class="w3-large">Clearing throat</span><br>
-					<span><i>Musician</i></span>
-					<audio src="audio/musician.mp3" ></audio>
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Coglione!</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Coglione.opus" ></audio>
 					<script> $("#a3").click(function() { $("audio")[1].play(); }); </script>
 				</li></a>
 				<li class="w3-right">
-					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/musician.mp3" download="">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Coglione.opus" download="">
 						<i class="fa fa-download w3-display-middle download-button-image"></i>
 					</a>
 				</li>
 			</ul>
 			<ul class="w3-ul  w3-border w3-display-container">
 				<a id="a4" href="##"><li class="w3-padding-16 w3-hover-opacity">
-					<img src="images/avatars/Pharmacist-Female-Dark.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-					<span class="w3-large">Good morning!</span><br>
-					<span><i>Pharmacist</i></span>
-					<audio src="audio/morning.mp3" ></audio>
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Deficiente!</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Deficiente.opus" ></audio>
 					<script> $("#a4").click(function() { $("audio")[2].play(); }); </script>
 				</li></a>
 				<li class="w3-right">
-					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/morning.mp3" download="">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Deficiente.opus" download="">
 						<i class="fa fa-download w3-display-middle download-button-image"></i>
 					</a>
 				</li>
 			</ul>
 			<ul class="w3-ul  w3-border w3-display-container">
 				<a id="a5" href="##"><li class="w3-padding-16 w3-hover-opacity">
-					<img src="images/avatars/Pilot-Male-Dark.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-					<span class="w3-large">Welcome on board</span><br>
-					<span><i>Pilot</i></span>
-					<audio src="audio/pilot.mp3" ></audio>
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Stupido!</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Stupido.opus" ></audio>
 					<script> $("#a5").click(function() { $("audio")[3].play(); }); </script>
 				</li></a>
 				<li class="w3-right">
-					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/pilot.mp3" download="">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Stupido.opus" download="">
 						<i class="fa fa-download w3-display-middle download-button-image"></i>
 					</a>
 				</li>
 			</ul>
 			<ul class="w3-ul  w3-border w3-display-container">
 				<a id="a6" href="##"><li class="w3-padding-16 w3-hover-opacity">
-					<img src="images/avatars/Santaclaus-Female.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-					<span class="w3-large">Ho hoo!</span><br>
-					<span><i>Santa</i></span>
-					<audio src="audio/santa.mp3" ></audio>
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">'Gognati!</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/'Gognati.opus" ></audio>
                     <script> $("#unico").click(function() { $("audio")[4].play(); }); </script>
 					<script> $("#a6").click(function() { $("audio")[4].play(); }); </script>
 				</li></a>
 				<li class="w3-right">
-					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/santa.mp3" download="">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/'Gognati.opus" download="">
 						<i class="fa fa-download w3-display-middle download-button-image"></i>
 					</a>
 				</li>
 			</ul>
 			<ul class="w3-ul  w3-border w3-display-container">
 				<a id="a7" href="##"><li class="w3-padding-16 w3-hover-opacity">
-					<img src="images/avatars/Technicalsupportrepresentative-Male-Light.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-					<span class="w3-large">How can I help you?</span><br>
-					<span><i>Tech support</i></span>
-					<audio src="audio/tech.mp3" ></audio>
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Appena avete pronti...</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Vettovaglie.opus" ></audio>
                     <script> $("#cavalieri").click(function() { $("audio")[5].play(); }); </script>
 					<script> $("#a7").click(function() { $("audio")[5].play(); }); </script>
 				</li></a>
 				<li class="w3-right">
-					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/tech.mp3" download="">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Vettovaglie.opus" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a8" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Dove sei?</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Dove sei.opus" ></audio>
+					<script> $("#a8").click(function() { $("audio")[6].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Dove sei.opus" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a9" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Buongiorno...</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Buongiorno.opus" ></audio>
+					<script> $("#a9").click(function() { $("audio")[7].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Buongiorno.opus" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a10" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Tuupido!</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Tuupido.opus" ></audio>
+                    <script> $("#imbarazzo").click(function() { $("audio")[8].play(); }); </script>
+					<script> $("#a10").click(function() { $("audio")[8].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Tuupido.opus" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a11" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Deficien</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Deficien.opus" ></audio>
+					<script> $("#a11").click(function() { $("audio")[9].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Deficien.opus" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a12" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Vincenzo.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Devi riflettere?</span><br>
+					<span><i>Enzo</i></span>
+					<audio src="audio/Vincenzo/Devi riflettere.opus" ></audio>
+					<script> $("#a12").click(function() { $("audio")[10].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/Vincenzo/Devi riflettere.opus" download="">
 						<i class="fa fa-download w3-display-middle download-button-image"></i>
 					</a>
 				</li>
 			</ul>
             <ul class="w3-ul w3-border w3-display-container">
 				<a id="party_button" href="##"><li class="w3-container w3-padding-large w3-hover-opacity" style="width:100%;">
-					Play all
+					The <b>party</b> button
 					<script>
 						$("#party_button").click(function () {
 							for(var i = 0; i < $("audio").length; ++i)
@@ -140,3 +262,183 @@
 		</div>
 	</body>
 </html>
+
+<!--
+
+                   :AMMMMMMMMMMMMA:
+                :AMMMMMMMMMMMMMMMMMMA:
+              :AMMMMMMMMMHHHHHMMMMMMMMA:
+             :AMHMMMMHHMHIHHIMMMHMMMMHHA:
+            :AM'MMMMMMHHIHHHIMMMMMIMMHHHH:
+            AM:IMMMMMHHIHIHHHIMMHHHHHHHHHH
+           AMIIHMMMMMHIHHHIHHIHHHHHHHHHHHH:
+           MMIHHMMMMMHHIHHHIHHHHHHHHHHHHHHH
+          AMMMMMHHHHHHI;;;;;;;IHHHI;;IHHHHH
+          MMMMHIIII;":AMMMMA        ,[[, HH
+          MMMMHII;  AW"''''         ::   HH
+         IHHIHIII;:'' ,GFMF[       [MM[: IH
+         AHHIHII;::': ";[P,[  ;;   ::::  IH
+        IHHHIHII;;::         :[;:        ;H
+        AHHHHHII;;;:: :     : [  :       ;H
+        IHHIIHI:[;;;:: ;   ; ; ,  ,      IH
+        IHHIIHH:[;;;: ;   ;: ':"::" ';   IH
+        IHHIIHI:[;;: ::: ;    ,,,,    '  HH
+       :IHHHIHHMMA;:::    [;;""""""[;   AMI
+       ;IHHHHIIHMM;: : :   ;;[,,,,[;    HHI
+       IIHHMMHHIHHM;::       '"""'     AMHI
+       IIHHMMHMHHIIIM;::              AMMHI
+       IHHHMMHMHMHHHIHI;::          :AMMMHI
+       IHHHMMMMHMMHHHII;;;;::   :,;; MMMHHI
+       IHHHMMHHHHMMHHHI;:";;;;;;"    MMMIH'
+       ;IHHMMHMMMMHF"HHII            MMMHH
+        IHHMMHV;;::    HHII;:      : MMHHI
+        IHHMV;;:::      HHII;:   : : MMHI;
+        IHMV;;:: :       "HII;:   :: MMI;
+       :IHV;::  :          'HI:   :: MM;
+       IHV;::  :            HA;:   : "'
+       IV;:: :   :          "II;:    ;
+      :IH;::  :              III;:    ;
+      IH;;:::  :              ;;;I:   ;
+      HV;::: :   :            ';;;HI:  '
+     ;M;;:::: :                ';;;HI:  '
+     MH;;::::           :        ';;HI:  ;
+    IM;;;::: :         :[;         ';I"I: ;
+    M;;;::: :   :      [;;,:          '  : '
+    ;;::::    :       ::''                : ':
+   ;;:::   :         :                     ': :
+  :;;::  :          ::                       ':'
+  ;;::  :  :        :                          '':
+ ;;:: :            :                           :;,:
+ ;;::  :          ::                           ;[[[,:
+:;;::    :        :                            ;;[[[;':
+;;:: : :         [::       : :                  ;[[[[;;[,
+;::   :         [;;;:     : :,                   [[[[['[[;
+;:: :          :M;;:       : :,[                  [[[[ [['
+;:     :        "[::        : ::[                  ;[' ;[
+;:   :           "[:         : ::[                 :'  :'
+:: :: :           ",           :::;[              :'  :;
+:   ::             ':          : :::;[          ::'  :;
+ ::  ;               :          : ::::;[:,,::;;I'   ;;
+  ;;:;: : :           :          :::::::: '""' I[[;"'
+   ;;;::     :         :          '::::'       ;
+    ";;;::  :   :       :
+      ;;;::    :   :     :                     ;
+       ";;;::: :          :
+        ';;;;:::  :   :    ':                  ;
+          ';;;;:::           :
+            ";;;:::: :        :                ;
+              ';;::::  :       :
+                ';;:::          '             ;
+                  M;::::  :      ':
+                  MMMI;::::        :          ;
+                  MMMMMA;:::        :
+                 AHHMMMMHA;::::      :       ;
+                :MHHMMMMMMMA;: '     :
+                AHHHMMM;"TTTTL:       :       ;
+               AHHHHHHMMLLLLLH ':      :
+              :MHHH:::;HHMMMMMA:        :     ;
+             :AHHH:::HH;;;;;MMM;:        :
+            :MHH;:      ;;;;;MMM:: :      :   ;
+           :MH;:  :      ';;;;MMM::     ': ':
+          ,H;:             ';;;MMM:::    :':' ;
+        ,;: :    :   :       ;;;Y;H::     :
+       ,;: : : :              ';;;:;  : : ;  ;
+      [;::          :           ;;:;  ; ; ;
+     ,;:::   :  :                  ; :; ; ; ;
+    ,;;: :  :        :             ; :; ; ;
+    [;::  :  :             :        ' ;:;" ;
+   ,;::  : :   :      :               ':' ;
+   [;: :  :      :       :   :        :
+   ;;::  :   :     :    :              : ;
+   ';;: : :   : :    :  :    :         :;
+    ;:::  ::  : : ::: :: :    :        ;
+    ';:: ::: ::::::;: : :   :
+     [;::::::::;;:;;::     :            ;
+      [[: ::::;;:;;:: :
+      ;;;;::::[[;;::     :     :         ;
+       ;;;;;:[[[::: :  :  :
+        ;;;[[[:: :      :  :    :        ;
+         ;:[[::::: ::    :    :
+         [[:;::::   :    :  :           ;
+          ;[;;;;: ::   :
+          ;[;;;:;: :: :  :    :          ;
+          ;[;;;;[: :  :    :
+          ;[;;;:;: ::                   ;
+          ;;[;;;: :  :    :
+         :;:[;;::: :                    ;
+         ;;:[;::: ::  :   :
+         ;::[;;:  :  :    :            ;
+         ;:;[;;:  :      :
+         ;:[;;:: : :       :          ;
+         ;:[;; ::   :   `:
+         ;:[;;::  :   :        :     ;
+         ';[;;: : :      :
+          ;[;;: ::     :      :     ;
+          ;[;; : :
+          ;[;;: ::  :           :
+          ;[;: :::            :    ;
+          ;[;;: ::  :        : :
+          ;;[;: : :     :  :: ::  ;
+          ;:[;::     :    ::  :
+          ;:[;:::        ::: :   ;
+          ;:[;::  :  :  ::  :
+          ;:[;::   :   :   :     ;
+         ;;:;[::;:    :    :
+         ;;:;[::;::   :   :     ;
+         ;;:;[;;;::         ::''
+        ;;::[;;;[:: : :    ''  ;
+       :;;::[;;[[:: :     ''
+       ;;:::[[;[[::       '   ;
+      :;:;: [[[;;: :      :  ;
+      ;::;: [[[;::           ;
+     ;::;: [[;::: :   :      ;
+    :;;:::[[[;;: ::         ;
+    ;;::;:[[;;; :   : :    ;
+    ;;:::;[[;;;  :
+    ;;:;:[[;;;:     :     ;
+    ;::;:[[;;;: :
+    ;:;:;[;;;: : :   :    ;
+    ;;::[[;;;:: :
+    ';;:[[;;;: :     :    ;
+     ;;:[[;;:::   :
+     ;;:[[;;::            ;
+     ';;[;;:: :
+      ;;[;;: :     ::     ;
+      ;;[;;;:: :  : :
+      ';;[;;::: :  ::     ;
+       ;;[;;;: :    :
+       ';[;;;::  : ::    ;
+        ;[[;;:: :  :
+        ;;[;;;:    :     ;
+        ;:[[;;::   :
+        ;:;[[;: :        ;
+        ;::[[;::   :
+        ;::[[;: :  :     ;
+        ;: ;[;;::
+        ;:  [;;:;: :     ;
+       :;:  [;;::  :
+       ;;: :[;;::        ;
+      :;;:: [;::  :
+     :;;::::[;: :        ;
+     ;;:::  [;: ::
+     ';:::::;[;:;: :     ;
+       ':::::[: ;::
+         ':::[ :[:       ;
+            ';: [:  :
+            :[: [::       ;
+           :;: :;;: :      '-:
+           [::; :[;:       :-'
+          ;::;: :;;:  :     :
+         ';::::;::"[:  :    '
+          ':: :  : :' :  :   ;
+           ':: : : ::
+              ':  : : : :     ;
+                ': ::     :    ;
+                  ': : :     :  ;
+                    -::   :      ':
+                      : ::     :   ''--::
+                      ': : :         -:  ':
+                        -:: :: :    ': '-'
+                          '-::  ': ': ':'
+
+-->
